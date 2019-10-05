@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         passwordEditText = findViewById(R.id.passwordID);
         auth = FirebaseAuth.getInstance();
 
-        //this is extra code for sdk version above of 26 rio
+        //this is extra code for sdk version above of 26 
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
             NotificationChannel channel = new NotificationChannel(CHANNEL_ID,CHANNEL_NAME,NotificationManager.IMPORTANCE_DEFAULT);
             channel.setDescription(CHANNEL_DESC);
