@@ -101,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
                     profileActivity();
                 }
                 else {
+                    //if user id already create then work this code 
                     if(task.getException() instanceof FirebaseAuthUserCollisionException){
                         userLogin(email, password);
                     }
